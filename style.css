@@ -1,0 +1,1108 @@
+/* start */
+*{
+    font-family: 'Questrial';
+}
+
+body{
+    background-color: rgb(218, 218, 218);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.hotelRooms{
+    display: none;
+    min-height: 100vh;
+}
+.mainPage {
+    min-height: 100vh;
+}
+.bookingPage{
+    margin-top: -8px;
+    position: relative;
+    display: none;
+}
+.imgSection{
+    max-width: 1980px;
+    height: 700px;
+    margin-top: -10px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+}
+.roomContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+  }
+  .room {
+      max-width: 461px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+  }
+  .room img {
+      width: 100%;
+      max-height: 350px;
+  }
+  .titleSection {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: "Questrial", sans-serif;
+    color: whitesmoke;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    max-width: 100%;
+    min-width: none;
+}
+
+.titleSection h5 {
+    min-width: 300px;
+    max-width: 100%;
+}
+
+#btnLogOutAdmin {
+    display: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(104, 0, 0);
+    padding: 10px;
+    float: right;
+    position: relative;
+    font-size: 20px;
+    font-family: "Questrial", sans-serif;
+    top: -10px;
+    right: 25px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .titleSection {
+    padding: 30px 100px;
+  }
+
+  .titleSection h3 {
+    min-width: unset;
+    max-width: 500px;
+  }
+}
+.taglineSection{
+    margin-top: 3%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.lineContainer{
+    margin-top: 3%;
+  }
+  .lines{
+    width: 100%;
+    height: 45px;
+    position: relative;
+  
+  }
+  .lines::after, .lines::before{
+    content: "";
+    position: absolute;
+    margin: auto;
+    height: 2px;
+    border:2px solid black;
+    width: 45%;
+    top: 20%;
+  }
+  .lines:after{
+    left:0;
+  }
+  .lines:before{
+    right: 0;
+  }
+  
+  .circles{
+    height: 40px;
+    width: 40px;
+    border:2px solid black;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+  }
+.bookButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 50px;
+  
+}
+.service p{
+    margin:10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 200px;
+    max-width: 200px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin: auto;
+}
+#pBookText{
+   text-align: center;
+   word-wrap: break-word;
+   max-width: 700px;
+}
+.row img{
+    width: 100%;
+    height: 258px; 
+}
+  /*end*/
+  
+  /*Booking Page*/
+.imgBooking{
+    width: 100%;
+    height: 500px;;
+}
+#bookingTitle{
+    position: absolute;
+    left: 11%;
+    top: 10%;
+    color: white;
+    font-size: 30px;
+    float: left;
+    transform:translate(-50%,-50%);
+    border: 2px solid black;
+    padding: 20px;
+    background: black;
+    border-radius: 6px;
+}
+.dateContainer{
+    width: 1200px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+}
+
+.formContainer{
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#btnChkAvail{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #181818;
+    margin: auto;
+}
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#reservationDateStart, #reservationDateEnd {
+    background-color: #181818;
+    padding: 15px;
+    font-family: "Roboto Mono",monospace;
+    color: #ffffff;
+    width: 300px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+#roomDropdown{
+    font-size: 18px;
+    width: 130px;
+    height: 30px;
+    margin-left: 2%;
+    color: white;
+    background-color: #181818;
+}
+.formContainer{
+    max-height: 900px;
+    max-width: 100%;
+}
+/**/
+
+li{
+    font-family: "Questrial", sans-serif;
+}
+
+#containerHeader{
+    background-color: black;
+}
+
+#headerReservation{
+    font-family: "Questrial", sans-serif;
+    color: whitesmoke;
+    background-color: black;
+    padding-bottom: 10px;
+    padding-left: 300px;
+}
+
+header{
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+    
+}
+
+header li{
+    display: inline;
+    padding-left: 40px;
+}
+
+header li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: "Questrial", sans-serif;
+    font-size: 20px;
+    transition: .4s ease;
+}
+
+header li a:hover{
+    color: lightblue;
+
+}
+
+header ul #btnLogIn a{
+    color: rgb(255, 255, 255);
+    background-color: rgb(104, 0, 0);
+    padding: 10px;
+    float: right;
+    position: relative;
+    font-size: 20px;
+    font-family: "Questrial", sans-serif;
+    top: -10px;
+    right: 25px;
+    cursor: pointer;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    position: relative;
+    color: white;
+    max-width: 200px;
+    max-height: 56px;
+    text-overflow: ellipsis;
+    padding: 8px;
+    font-size: 20px;
+    float: right;
+    /* margin-bottom: 50px; */
+    border: none;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+  
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    color:rgb(142, 142, 142);
+}
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    float: right;
+    margin-right: 100px;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    margin: 0;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.userDropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    margin-top: 40px;
+    width: 200px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.userDropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.userDropdown-content a:hover {
+    background-color: #ddd;
+    color: rgb(97, 97, 97)
+}
+
+#btnUser {
+    display: none;
+}
+
+header ul #scytexLogo a{
+    float: left;
+}
+
+/* HOTEL ROOMS PAGE CSS */
+#containerPage1{
+    position: relative;
+    width: 100%;
+    height: 650px;
+}
+
+#firstPhoto{
+    width: 100%;
+    height: 600px;
+    margin-top: -22px;
+}
+
+#textMessageMainPage{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    font-size: 30px;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border: 3px solid black;
+    color: white;
+    font-family: "Questrial", sans-serif;
+    font-size: 32px;
+}
+
+#textSedaNuvali{
+    font-family: "Questrial", sans-serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#textDescriptionSeda{
+    text-align: center;
+    font-family: sans-serif;
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+#secondPhoto{
+    width: 100%;
+}
+
+/* jr.suite css */
+#firstPromoContainer{
+    position: relative;
+    width: 100%;
+    height: 650px;
+}
+
+#thirdPhoto{
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#containerPromotionJuniorSuite{
+    background-color: rgb(255, 223, 223);
+    border-radius: 90%;
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    font-size: 30px;
+    padding: 20px;
+    border-color: black;
+    width:200px;
+    height: 120px;
+}
+
+#bookNowText{
+    position: absolute;
+    color: rgb(255, 115, 64);
+    font-family: "Questrial", sans-serif;
+}
+
+#textJuniorSuite{
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btnBookNowJrSuite{
+    position: absolute;
+    left: 43.5%;
+    bottom: 15%;
+    font-size: 20px;
+    padding: 20px;
+    border-color: white;
+    border-width: 4px;
+    width:250px;
+    color: white;
+    background-color: transparent;
+}
+
+/* Deluxe Twin css */
+#secondPromoContainer{
+    position: relative;
+    width: 100%;
+    height: 650px;
+}
+
+#deluxeTwinText{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: "Questrial", sans-serif;
+}
+
+#fourthPhoto{
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#containerPromotionDeluxeTwin{
+    background-color: rgb(255, 223, 223);
+    border-radius: 90%;
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    font-size: 30px;
+    padding: 20px;
+    border-color: black;
+    width:200px;
+    height: 120px;
+}
+
+.btnBookNowDeluxeTwin{
+    position: absolute;
+    bottom: 10%;
+    left: 43%;
+    font-size: 20px;
+    padding: 20px;
+    border-color: rgb(255, 255, 255);
+    border-width: 4px;
+    width:250px;
+    color: white;
+    background-color: transparent;
+}
+
+/* bussinessDeluxeSingle CSS */
+#thirdPromoContainer{
+    position: relative;
+    width: 100%;
+    height: 650px;
+}
+
+#businessDeluxeText{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: "Questrial", sans-serif;
+}
+
+#containerPromotionBusinessDeluxe{
+    background-color: rgb(255, 223, 223);
+    border-radius: 90%;
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    font-size: 30px;
+    padding: 20px;
+    border-color: black;
+    width:200px;
+    height: 120px;
+}
+
+.btnBookNowBusinessDeluxe{
+    position: absolute;
+    bottom: 10%;
+    left: 43%;
+    font-size: 20px;
+    padding: 20px;
+    border-color: rgb(255, 255, 255);
+    border-width: 4px;
+    width:250px;
+    color: white;
+    background-color: transparent;
+}
+
+/* 4. DELUXE QUEEN */
+#fourthPromoContainer{
+    position: relative;
+    width: 100%;
+    height: 650px;
+}
+
+#deluxeQueenText{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: "Questrial", sans-serif;
+}
+
+#containerPromotionDeluxeQueen{
+    background-color: rgb(255, 223, 223);
+    border-radius: 90%;
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    font-size: 30px;
+    padding: 20px;
+    border-color: black;
+    width:200px;
+    height: 120px;
+}
+
+.btnBookNowDeluxeQueen{
+    position: absolute;
+    bottom: 10%;
+    left: 43%;
+    font-size: 20px;
+    padding: 20px;
+    border-color: rgb(255, 255, 255);
+    border-width: 4px;
+    width:250px;
+    color: white;
+    background-color: transparent;
+}
+
+/* room amenities and inclusion css */
+#amenitiesInclusionHeader{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    margin-top: -30px;
+}
+#headerAmenities{
+    font-family: "Questrial", sans-serif;
+    position: absolute;
+    left: 0px;
+    top: 40%;
+}
+
+#headerInclusion{
+    font-family: "Questrial", sans-serif;
+    position: absolute;
+    right: 330px;
+    top: 40%;
+}
+
+#roomAmenitiesAndInclusion{
+    width: 100%;
+    position: relative;
+}
+
+#roomAmenitiesAndInclusion{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#roomAmenitiesAndInclusion #roomAmenitiesColumn1{
+    float: left;
+    width: 350px;
+    margin-right: 50px;
+}
+
+#amenitiesText #roomInclusionColumn2{
+    float: right;
+    width: 350px;
+}
+
+/* amenities (hotel room) */
+#amenitiesText{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    margin-top: 140px;
+}
+
+#amenitiesText #amenitiesColumn1{
+    float: left;
+    width: 350px;
+}
+
+#amenitiesText #amenitiesColumn2{
+    float: right;
+    width: 350px;
+}
+
+.signUpPage {
+    display: none;
+}
+
+.logInPage {
+    display: none;
+}
+
+#linkSignUp {
+    cursor: pointer;
+}
+
+#linkLogIn {
+    cursor: pointer;
+}
+
+/*ManagePage*/
+.managePage{
+    gap: 3em;
+    margin-bottom: 10px;
+ }
+
+.leftManage{
+    max-width: 220px;
+    height: 300px;
+}
+
+.profilePage {
+    height: 100vh;
+}
+
+ #profileContainer{
+     height: 120px;
+     width: 120px;
+     border: 2px solid black;
+     position: relative;
+     margin-left: 5%;
+     margin-bottom: 2%;
+     min-height: 100vh;
+ }
+
+ .rightManage{
+     padding: 10px;
+     width: 800px;
+     height: 300px;
+     border: 2px solid black;
+     left: 50%;
+     margin-bottom: 20px;
+     border-radius: 6px;
+ }
+
+ #btnChangPass{
+     padding: 5px;
+     width: 140px;
+     height: 50px;
+     font-size: 15px;
+ }
+ .tab-content {
+    
+    
+    border-top: none;
+ }
+ 
+
+.reservationsContainer {
+    width: 100%;
+}
+ 
+.profileContainer{
+    max-width: 200px;
+    max-height: 150px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 15px;
+}
+
+
+.changePassContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: auto;
+}
+/* end of manage*/
+
+.gradient-custom-2 {
+    background: linear-gradient(to bottom, #a041a0, #ff6ec7);
+}
+
+@media (min-width: 768px) {
+.gradient-form {
+height: 100vh !important;
+}
+}
+@media (min-width: 769px) {
+.gradient-custom-2 {
+border-top-right-radius: .3rem;
+border-bottom-right-radius: .3rem;
+}
+}
+#imgRightLogIn{
+    object-position: left;
+    height: 100vh;
+    max-width: 100%;
+    padding-right: 10px;
+    border-radius: 0 14px 14px 0;
+}
+#cardLogIn{
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.containerLogIn{
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 7px 7px 5px 7px #888888;
+}
+
+/* changepassword CSS */
+.changePasswordPage {
+    display: none;
+    height: 100vh;
+}
+
+.changeContainer{
+    width: 420px;
+    height: 600px;
+    padding: 20px;
+    margin: auto;
+    background-image: linear-gradient(to bottom right, rgb(131, 58, 181), rgb(42, 132, 185));
+    margin-top: 80px;
+    text-align: center;
+    border-radius: 20px;
+    border: solid rgb(71, 39, 85);
+    font-family: sans-serif;
+    background-color: rgb(16, 16, 16);
+    background-color: rgba(2, 2, 2, 0.4);
+    color: white;
+}
+
+#btnBackChangePass {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+#btnBackChangePass:hover {
+    color:#bebebe;
+}
+
+.btnChange{
+    height: 40px;
+    width: 200px;
+    background-color: rgb(36, 157, 255);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    margin-top: 50px;
+    transition: .2s;
+}
+
+.btnChange:hover{
+    background-color: rgb(0, 29, 217);
+}
+
+/* Receipt Modal */
+#modalViewReceipt {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+}
+
+#btnCloseReceiptModal {
+    position: absolute;
+    right: 5px;
+    height: 40px;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 30px;
+    margin-top:-6px;
+    margin-right: 2px;
+    color: red;
+}
+
+#btnCloseReceiptModal:hover,
+#btnCloseReceiptModal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Admin Page */
+.adminPage {
+    display: none;
+    gap: 3em;
+    margin-bottom: 10px;
+}
+/* end of Admin page*/
+
+.awaitStatusPage {
+    display: none;
+    height: 100vh;
+}
+
+/* Status Page CSS */
+.statusBackgroundText {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    height: 500px;
+}
+
+.btnHome {
+    background-color: rgb(52, 167, 255);
+    padding: 5px;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+    margin-top: 100px;
+}
+
+/* page ends Status Page */
+
+.rowProfile {
+    height: 500px;
+    width: 500px
+}
+
+/*Contact Us*/
+
+.contactUsPage {
+    display: none;
+    margin-top: -8px;
+}
+
+.contactContainer{
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+#imgContact{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contactBgContainer{
+    width: 100%;
+    position: relative;
+}
+.contactBgContainer h1{
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    color: aliceblue;
+    font-weight:bold;
+}
+.rightContainer h2{
+    text-align: start;    
+    max-width: 300px;
+    color: black;
+}
+.rightContainer{
+    position: absolute;
+    color: #ffffff;
+    display: flex;
+    word-wrap: break-word;
+    max-width: 750px;
+    height: 500px;
+    gap: 2em;
+    top: 20%;
+    left: 36%;
+    border-radius: 6px;
+    border: 1px solid black;
+    padding: 2rem;
+}
+.rightContainer p{
+    font-family: Questrial;
+    margin-top: 70px;
+    font-size: 18px;
+    color: whitesmoke;
+    width: 400px;
+}
+.rightContainer H6{
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: rgb(66, 206, 66);
+}
+
+/*End of Contact Us page*/
+
+
+/* about us page */
+.aboutUsPage {
+    display: none;
+    margin-top: -8px;
+}
+
+.aboutUsTextHead{
+    position: absolute;
+    left: 100px;
+    top: 20%;
+    font-size: 30px;
+    width: 600px;
+    color: aliceblue;
+}
+
+.groupMembersBodyContainer{
+    background-color: rgb(192, 191, 191);
+    width: 1160px;
+    height: 1400px;
+    margin: auto;
+    position: relative;
+}
+
+#rennielAneniasAboutUs{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    left: 30px;
+    border-radius: 5px;
+    top: 500px;
+}
+
+#janellaLorqueAboutUs{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    left: 250px;
+    border-radius: 5px;
+    top: 500px;
+}
+
+#jhounelleCasitasAboutUs{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    left: 150px;
+    border-radius: 5px;
+    top: 40px;
+}
+
+#royetteFaulminoAboutUs{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    left: 700px;
+    border-radius: 5px;
+    top: 500px;
+}
+
+#edrickJanMartinezAboutUs{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    left: 925px;
+    border-radius: 5px;
+    top: 500px;
+}
+
+#jeshuaJamesBaroniaAboutUs{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    left: 475px;
+    border-radius: 5px;
+    top: 500px;
+}
+
+#gideonCuraAboutUs{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    left: 145px;
+    border-radius: 5px;
+    top: 900px;
+}
+
+#carielJakeSoriagaAboutUs{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    left: 375px;
+    border-radius: 5px;
+    top: 900px;
+}
+
+#markRomoAboutUs{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    left: 600px;
+    border-radius: 5px;
+    top: 900px;
+}
+
+#joshuaSaladagaAboutUs{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    left: 830px;
+    border-radius: 5px;
+    top: 900px;
+}

@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScyteX Hotel Reservations | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- GOOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400&family=Noto+Serif&family=
+    Open+Sans:wght@300&family=Oswald:wght@500&family=Playfair+Display:ital,wght@0,400;0,600;1,500&family=
+    Questrial&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons-->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400&family=Noto+Serif&family=
+    Open+Sans:wght@300&family=Oswald:wght@500&family=Playfair+Display:ital,wght@0,400;0,600;1,500&family=
+    Questrial&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Include Chart.js library (Design of Report Stats)-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div id="containerHeader" class="containerheader">
+      <header>
+        <ul>
+          <li id="scytexLogo"><a href="javascript:void(0);">ScyteX</a></li>
+          <li><a id="navRooms" href="javascript:void(0);">ROOMS</a></li>
+          <li><a id="navContactUs" href="javascript:void(0);">CONTACT US</a></li>
+          <li><a id="navAboutUs" href="javascript:void(0);">ABOUT US</a></li>
+          <li id="btnLogIn"><a href="javascript:void(0);">LOG IN</a></li>
+          <li>
+            <div class="dropdown">
+              <a id="btnUser" class="dropbtn" href="javascript:void(0);"></a>
+              <div id="userDropdown" class="userDropdown-content">
+                <a id="btnProfile" href="javascript:void(0)"><i class="fa-solid fa-user"></i> PROFILE</a>
+                <a id="btnLogOut" href="javascript:void(0)"><i class="fa-solid fa-right-from-bracket"></i> LOG OUT</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a id="btnLogOutAdmin">Log Out</a>
+          </li>
+        </ul>
+      </header>
+      <h1 id="headerReservation">HOTEL RESERVATION</h1>        
+    </div>
+    <div class="mainContainer">
+      <!-- <div class="mainPage"> -->
+        <!-- HotelRoom page -->
+        <div class="hotelRooms">
+          <div id="containerPage1">
+            <img src="https://www.johansens.com/wp-content/uploads/2016/05/Phillipines-Crimson-Resort-and-Spa-Mactan-18-e1660302870683.jpg" id="firstPhoto">
+            <p id="textMessageMainPage">CHOOSE THE RIGHT HOTEL FOR YOU</p>
+          </div>
+          <!-- Offers -->
+          <!-- 1. JR SUITE -->
+          <div class = "lineContainer" style="margin-top: -50px;">
+            <div class ="lines">
+              <div class = "circles"></div>
+            </div>
+          </div>
+          <h1 id="textJuniorSuite">Jr. SUITE</h1>
+          <p style="text-align: center;">A small suite with junior amenities.</p>
+          <div id="firstPromoContainer" style="margin-bottom: -135px;">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height: 500px; width: 1000px; margin: auto;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="https://cms.inspirato.com/ImageGen.ashx?image=%2fmedia%2f9398060%2fbarcelona_spain_majestic-hotel-spa_junior-suite-paseo-de-gracia2.jpg&width=780" alt="First slide">
+                </div>
+              </div>
+              <div id="containerPromotionJuniorSuite">
+                <p id="bookNowText">BOOK NOW! ₱3999</p>
+              </div>
+            </div>
+            <button id="btnBookJrSuite" class="btnBookNowJrSuite">BOOK NOW</button>
+          </div>
+          <div id="roomAmenitiesAndInclusion">
+              <div id="amenitiesInclusionHeader">
+                  <h1 id="headerAmenities">Room Amenities</h1>
+                  <h1 id="headerInclusion">Room Inclusion</h1>
+              </div>
+              <div id="roomAmenitiesColumn1">
+                  <li>Individual Air-conditioned unit</li>
+                  <li>2 Bedroom Suites with Living Area</li>
+                  <li>In room Coffee and Tea Facilities</li>
+                  <li>Cable TV</li>
+                  <li>Mini Ref</li>
+                  <li>Toiletries</li>
+                  <li>Hair dryer other rooms with set up, w/o upon request</li>
+                  <li>Daily local and international newspapers</li>
+                  <li>Safe box</li>
+              </div>
+              <div id="roomInclusionColumn2">
+                  <li>Overnight stay for 4 persons</li>
+                  <li>Buffet breakfast from 6:00am to 10:00am at Premier Café</li>
+                  <li>Complimentary unlimited Wi-Fi/ Internet access in the guestrooms for 2 devices</li>
+                  <li>Complimentary unlimited Wi-Fi Access in Public areas</li>
+                  <li>Complimentary bottled water</li>
+                  <li>In room Coffee and Tea Facilities</li>
+                  <li>Complimentary parking</li>
+                  <li>Complimentary use of Fitness Gym</li>
+                  <li>Room service from 6:00am to 10:00pm</li>
+                  <li>Daily shuttle to Laguna Technopark, Paseo & Nuvali (based on availability)</li>
+              </div>
+          </div>
+          <!-- 2. DELUXE TWIN -->
+          <div class = "lineContainer">
+            <div class ="lines">
+              <div class = "circles"> </div>
+            </div>
+          </div>
+          <h1 id="deluxeTwinText">Deluxe Twin</h1>
+          <p style="text-align: center;">A spacious twin room with additional amenities.</p>
+          <div id="secondPromoContainer">
+              <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel" style="height: 500px; width: 1000px; margin: auto;">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <img class="d-block w-100" src="https://aw-d.tripcdn.com/images/0220c120009zt9s181B08_Z_1080_808_R5_D.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                          <img class="d-block w-100" src="https://aw-d.tripcdn.com/images/020051200089rmuk93DED_Z_1080_808_R5_D.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                          <img class="d-block w-100" src="https://aw-d.tripcdn.com/images/0220c120009zt9s181B08_Z_1080_808_R5_D.jpg" alt="Third slide">
+                      </div>
+                  </div>
+                  <div id="containerPromotionDeluxeTwin">
+                      <p id="bookNowText">BOOK NOW! ₱5478.30</p>
+                  </div>
+              </div>
+              <button id="btnBookDeluxeTwin" class="btnBookNowDeluxeTwin">BOOK NOW</button>
+          </div>
+          <div id="roomAmenitiesAndInclusion">
+              <div id="amenitiesInclusionHeader">
+                  <h1 id="headerAmenities">Room Amenities</h1>
+                  <h1 id="headerInclusion">Room Inclusion</h1>
+              </div>
+              <div id="roomAmenitiesColumn1">
+                  <li>Individual Air-conditioned unit</li>
+                  <li>Complimentary bottled water</li>
+                  <li>In room Coffee and Tea Facilities</li>
+                  <li>Cable TV</li>
+                  <li>Mini Ref</li>
+                  <li>Toiletries</li>
+                  <li>Hair dryer other rooms with set up, w/o upon request</li>
+                  <li>Daily local and international newspapers</li>
+                  <li>Safe box</li>
+              </div>
+              <div id="roomInclusionColumn2">
+                  <li>Overnight stay for 2 persons</li>
+                  <li>Buffet breakfast from 6:00am to 10:00am at Premier Café</li>
+                  <li>Complimentary unlimited Wi-Fi/ Internet access in the guestrooms for 2 devices</li>
+                  <li>Complimentary unlimited Wi-Fi Access in Public areas</li>
+                  <li>Complimentary bottled water</li>
+                  <li>In room Coffee and Tea Facilities</li>
+                  <li>Complimentary parking</li>
+                  <li>Complimentary use of Fitness Gym</li>
+                  <li>Room service from 6:00am to 10:00pm</li>
+                  <li>Daily shuttle to Laguna Technopark, Paseo & Nuvali (based on availability)</li>
+              </div>
+          </div>
+          <!-- 3. BUSINESS Deluxe -->
+          <div class = "lineContainer">
+              <div class ="lines">
+                  <div class = "circles"> </div>
+              </div>
+          </div>
+          <h1 id="businessDeluxeText">Business Deluxe Single</h1>
+          <p style="text-align: center;">A deluxe room with added business facilities and services.</p>
+          <div id="thirdPromoContainer" style="margin-bottom: -65px;">
+              <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel"  style="height: 500px; width: 1000px; margin: auto;">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="https://aw-d.tripcdn.com/images/2205160000010ep2sAD92_Z_1080_808_R5_D.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="https://aw-d.tripcdn.com/images/0221j12000amrzqzk5E94_Z_1080_808_R5_D.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="https://aw-d.tripcdn.com/images/2205160000010ep2vFD35_Z_1080_808_R5_D.jpg" alt="Third slide">
+                    </div>
+                  </div>
+                  <div id="containerPromotionBusinessDeluxe">
+                      <p id="bookNowText">BOOK NOW! ₱8186.85</p>
+                  </div>
+                </div>
+              <button id="btnBookBusinessDeluxe" class="btnBookNowBusinessDeluxe">BOOK NOW</button>
+          </div>
+          <div id="roomAmenitiesAndInclusion">
+              <div id="amenitiesInclusionHeader">
+                  <h1 id="headerAmenities">Room Amenities</h1>
+                  <h1 id="headerInclusion">Room Inclusion</h1>
+              </div>
+              <div id="roomAmenitiesColumn1">
+                  <li>Individual Air-conditioned unit</li>
+                  <li>Complimentary bottled water</li>
+                  <li>In room Coffee and Tea Facilities</li>
+                  <li>Cable TV</li>
+                  <li>Mini Ref</li>
+                  <li>Toiletries</li>
+                  <li>Hair dryer other rooms with set up, w/o upon request</li>
+                  <li>Daily local and international newspapers</li>
+                  <li>Safe box</li>
+              </div>
+              <div id="roomInclusionColumn2">
+                  <li>Overnight stay for 2 persons</li>
+                  <li>Buffet breakfast from 6:00am to 10:00am at Premier Café</li>
+                  <li>Complimentary unlimited Wi-Fi/ Internet access in the guestrooms for 2 devices</li>
+                  <li>Complimentary unlimited Wi-Fi Access in Public areas</li>
+                  <li>Complimentary bottled water</li>
+                  <li>In room Coffee and Tea Facilities</li>
+                  <li>Complimentary parking</li>
+                  <li>Complimentary use of Fitness Gym</li>
+                  <li>Room service from 6:00am to 10:00pm</li>
+                  <li>Daily shuttle to Laguna Technopark, Paseo & Nuvali (based on availability)</li>
+              </div>
+          </div>
+          <!-- 4. Deluxe Queen -->
+          <div class = "lineContainer">
+              <div class ="lines">
+                  <div class = "circles"> </div>
+              </div>
+          </div>
+          <h1 id="deluxeQueenText">Deluxe Queen</h1>
+          <p style="text-align: center;">A luxurious room with a queen-sized bed and additional amenities.</p>
+          <div id="fourthPromoContainer">
+              <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel" style="height: 500px; width: 1000px; margin: auto;">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="https://aw-d.tripcdn.com/images/0200e120008df7w6nDB88_Z_1080_808_R5_D.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="https://aw-d.tripcdn.com/images/0202e120008df7s005422_Z_1080_808_R5_D.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="https://aw-d.tripcdn.com/images/0226z120009ztflpsFAF4_Z_1080_808_R5_D.jpg" alt="Third slide">
+                    </div>
+                  </div>
+                  <div id="containerPromotionDeluxeQueen">
+                      <p id="bookNowText">BOOK NOW! ₱10990.90</p>
+                  </div>
+                </div>
+              <button id="btnBookDeluxeQueen" class="btnBookNowDeluxeQueen">BOOK NOW</button>
+          </div>
+          <div id="roomAmenitiesAndInclusion">
+              <div id="amenitiesInclusionHeader">
+                  <h1 id="headerAmenities">Room Amenities</h1>
+                  <h1 id="headerInclusion">Room Inclusion</h1>
+              </div>
+              <div id="roomAmenitiesColumn1">
+                  <li>Individual Air-conditioned unit</li>
+                  <li>Complimentary bottled water</li>
+                  <li>In room Coffee and Tea Facilities</li>
+                  <li>Cable TV</li>
+                  <li>Mini Ref</li>
+                  <li>Toiletries</li>
+                  <li>Hair dryer other rooms with set up, w/o upon request</li>
+                  <li>Daily local and international newspapers</li>
+                  <li>Safe box</li>
+              </div>
+              <div id="roomInclusionColumn2">
+                  <li>Overnight stay for 2 persons</li>
+                  <li>Buffet breakfast from 6:00am to 10:00am at Premier Café</li>
+                  <li>Complimentary unlimited Wi-Fi/ Internet access in the guestrooms for 2 devices</li>
+                  <li>Complimentary unlimited Wi-Fi Access in Public areas</li>
+                  <li>Complimentary bottled water</li>
+                  <li>In room Coffee and Tea Facilities</li>
+                  <li>Complimentary parking</li>
+                  <li>Complimentary use of Fitness Gym</li>
+                  <li>Room service from 6:00am to 10:00pm</li>
+                  <li>Daily shuttle to Laguna Technopark, Paseo & Nuvali (based on availability)</li>
+              </div>
+          </div>
+      </div>
+        <!--Landing Page-->
+        <div class="mainPage">
+            <div class = "imgSection">
+              <img src="https://www.johansens.com/wp-content/uploads/2016/05/Philippines-Crimson-Resort-and-Spa-Mactan-19.jpg" id="imgbg"style="width: 100%; height: 100%; object-fit: cover;">
+              <div class="titleSection"><h1 id ="scytex">Scytex</h1>
+                <h5>Hotel Management System</h5>
+              </div>
+            </div>
+            <div class = "lineContainer">
+              <div class ="lines">
+                <div class = "circles"> </div>
+              </div>
+            </div> 
+            <div class = "taglineSection">
+              <h3 id = "tagline" style="margin-bottom: 15px;" >YOUR DREAM HOTEL AWAITS!</h3>
+              <p class="text-center">Experience Tranquility and Luxury in the Heart of Laguna: Unwind and Recharge at Our Luxurious Hotel!</p>
+            </div>
+            <div class="roomSection">
+              <div class ="roomContainer">
+                <div class="room">
+                  <img src="https://photos.hotelbeds.com/giata/original/47/479183/479183a_hb_ro_010.jpg"id = "imgJuniorSuite" style = "width: 100%; height: 100%; object-fit: cover;" >
+                  <h3><b>JUNIOR SUITE PACKAGE INCLUDES:</b><br></h3> 
+                    <p>
+                      Room Size: 55 square meter<br>
+                      Bed Type:  1 King-sized bed with living room<br>
+                      Bathroom Type: Separate shower and bathtub
+                    </p>
+                </div>
+                <div class="room">
+                  <img src="https://technoparkhotel.com/wp-content/uploads/2020/01/TPH-DLX-T-2-2.jpg" id="imgdeluxeTwin"style = "width: 100%; height: 100%; object-fit: cover;">
+                  <h3><b>DELUXE TWIN PACKAGE INCLUDES:</b><br></h3>
+                  <p>
+                    Room Size: 28 to 33 square meter<br>
+                    Bed Type: 2 Single Beds<br>
+                    Bathroom Type: Shower only, no bathtub
+                  </p>
+                </div>
+                <div class="room">
+                  <img src="https://cdn.webhotelier.net/photos/w=1920/sedacebu-1bapt/L683683.jpg" id="imgbusinessDel"style = "width: 100%; height: 100%; object-fit: cover;">
+                  <h3><b>BUSINESS DELUXE SINGLE PACKAGE INCLUDES:</b><br></h3>
+                  <p>
+                    Room Size: 28 to 33 square meter<br>
+                    Bed Type: 1 King Sized Bed<br>
+                    Bathroom Type: Separate shower and bathtub
+                  </p>
+                </div>
+                <div class="room">
+                    <img src = "https://images.trvl-media.com/lodging/12000000/11530000/11529000/11528920/5e09f5cd.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium" id="imgDeluxeQueen"style = "width: 100%; height: 100%; object-fit: cover;">
+                    <h3><b>DELUXE QUEEN PACKAGE INCLUDES:</b><br></h3>
+                    <p>
+                      Room Size: 28 to 33 square meter<br>
+                      Bed Type: 1 Queen Sized Bed<br>
+                      Bathroom Type: Separate shower and bathtub
+                    </p>
+                </div>
+              </div>
+              <div class="bookButton">
+                <button id="btnBookNow" type="button" class="btn btn-success btn-lg">BOOK NOW!</button>
+              </div>
+            </div> 
+            <div class = "lineContainer">
+              <div class ="lines">
+                <div class = "circles"> </div>
+              </div>
+            </div> 
+            <h1 style="text-align: center; margin-top: 40px;">COME AND BOOK NOW!</h1>
+            <div style="display:flex; align-items: center; justify-content: center;">
+              <p id="pBookText">
+                We are delighted to have you as our guest and we hope that your 
+                stay with us will be a memorable one. From our beautifully appointed rooms to 
+                our world-class amenities and impeccable service, we are confident that you will have 
+                a truly wonderful experience with us. Thank you for choosing our hotel service and
+                we look forward to serving you soon!
+              </p>
+            </div>
+            <div class = "service">
+              <!-- Gallery -->
+              <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                  <img
+                    src="https://ik.imagekit.io/tvlk/apr-asset/dgXfoyh24ryQLRcGq00cIdKHRmotrWLNlvG-TxlcLxGkiDwaUSggleJNPRgIHCX6/hotel/asset/10013501-1366x820-FIT_AND_TRIM-b8ae46093f58d7c4cccca83b1a476624.jpeg?tr=q-40,c-at_max,w-1280,h-720&_src=imagekit"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Boat on Calm Water"
+                  />
+                  <img
+                    src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/88267766.jpg?k=c3ff1af4a19e0c5017976b3ed23944d3ad1c1be497dc6c55af7c9202ed113f1c&o=&hp=1"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Wintry Mountain Landscape"
+                  />
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                  <img
+                    src="https://primer.com.ph/travel/wp-content/uploads/sites/6/2016/01/paseo-premiere-rooms.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Mountains in the Clouds"
+                  />
+                  <img
+                    src="https://primovenues.com/wp-content/uploads/2017/05/Special-wedding-events-venue-Paseo-Premiere-Hotel-1024x683.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Boat on Calm Water"
+                  />
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                  <img
+                    src="https://primovenues.com/wp-content/uploads/2017/05/Great-evening-events-venue-Paseo-Premiere-Hotel-1024x683.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Waves at Sea"
+                  />
+                  <img
+                    src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/239408566.jpg?k=618bb8561d6b6169ce73ca46f8d4ffa47fc69df946ca5d9743e5a0e389dc5133&o=&hp=1"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Yosemite National Park"
+                  />
+                </div>
+              </div>
+              <!-- Gallery -->
+            </div>
+            <!-- Services-->
+            <section class="page-section" id="services" style="margin-bottom: 5%;">
+              <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">At Your Service</h2>
+                <hr class="divider"/>
+                <div class="row gx-4 gx-lg-5">
+                  <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                      <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                      <h3 class="h4 mb-2">Luxurious Roomss</h3>
+                      <p class="text-muted mb-0">Indulge in pure bliss and relaxation in our luxurious rooms.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                      <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                      <h3 class="h4 mb-2">Fast Booking</h3>
+                      <p class="text-muted mb-0">Book with ease and convenience, just a few clicks to your dream vacation.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                      <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                      <h3 class="h4 mb-2">Exceptional Service</h3>
+                      <p class="text-muted mb-0">Experience personalized hospitality at its finest, where every detail is taken care of with utmost care and attention.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                      <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                      <h3 class="h4 mb-2">Enjoy</h3>
+                      <p class="text-muted mb-0">Elevate your stay with our exceptional service, where every moment is crafted just for you.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div> 
+      <!-- </div> -->
+
+      <!--Contact Us page-->
+      <div class="contactUsPage">
+        <div class="contactContainer">
+          <div class="contactBgContainer">
+            <img src="https://image.lexica.art/full_jpg/20bea3d7-6137-4722-bf68-602a0021b44c" id="imgContact">
+            <h1>Contact US</h1>
+            <div class="rightContainer">
+              <h2>Scytex Hotel Management & Reservation</h2>
+              <p>
+                Welcome to our Contact Us page! We're thrilled that 
+                you're interested in getting in touch with us. Whether 
+                you have a question, feedback, or simply want to say 
+                hello, we're here to listen and assist you in the best
+                possible way.<br><br>Thank you for choosing <u>Scytex</u>
+                We look forward to hearing from you and building a lasting relationship.
+              </p>
+              <h6 id=txtDial>FOR MORE INQUIRIES DIAL:<br>09123456789</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- about us page -->
+      <div class="aboutUsPage">
+        <div class="headContainerAboutUs">
+          <img src="https://i.pinimg.com/originals/8a/36/f1/8a36f1b33b436275a8424ab0d7c307da.jpg" style="width: 100%; height: 600px;">
+          <div class="aboutUsTextHead">
+            <h1 style="font-weight: 600; color: aliceblue;">About Us</h1>
+            <p>Welcome to our website, created by a team of talented IT students! Our team has worked hard to design and develop this website, bringing together our skills and creativity to make it as informative and engaging as possible. Our goal is to provide you with a seamless browsing experience and to showcase our passion for technology and innovation.</p>
+          </div>
+        </div>
+        <div class = "lineContainer">
+            <div class ="lines">
+                <div class = "circles"> </div>
+            </div>
+        </div>
+        <h1 style="text-align: center;">Quote</h1>
+        <h2 style="text-align: center;">"Excellence through innovation and collaboration."</h2>
+        <div class = "lineContainer">
+            <div class ="lines">
+                <div class = "circles"> </div>
+            </div>
+        </div>
+        <div class="groupMembersBodyContainer">
+            <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/345866948_1939818096381169_2316040686049635510_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=ILByqP5_yEgAX90KEva&_nc_oc=AQn5j2sDiFTkEq-we2ca5QQkNAToy2Pt2EwZh7Kuw_Ij316968ica3ao64pCEZMeT6o&_nc_ht=scontent.fmnl17-2.fna&oh=03_AdRH5QuqLb6mNCsKPkLazmD4KNSAacRbSB1tXgZyqytdng&oe=648295E4" id="jhounelleCasitasAboutUs">
+            <div style="position: absolute; left: 450px; top: 80px;">
+              <h1 style="font-weight: 600;">Jhounelle R.Casitas</h1>
+              <p style="font-size: 25px;">leader of the group</p>
+            </div>
+            <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/345850447_1412893749488789_3899853043030838003_n.png?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=LEjJK-D5_zYAX_jYxWC&_nc_ht=scontent.fmnl17-3.fna&oh=03_AdRocBWpwW1PosAfBM28i3nHrELbYsya0fO1UzrfXINjdg&oe=6482D209" id="rennielAneniasAboutUs">
+            <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/345582284_779100753789145_4458554949530016708_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=ae9488&_nc_ohc=G1b5vi-vjzIAX91c3Ga&_nc_oc=AQmA2sWlaIp8eLjGY7YH04LvFG0OX0R0egirZY3NhhnwM6f-mjsxS8JSsrVWDq3Ull8&_nc_ht=scontent.fmnl17-2.fna&oh=03_AdTywQyQHxzlZyIdozpWWSW4d_J6FfUT3UDkuKVOMPu8Ow&oe=6482AF4D" id="janellaLorqueAboutUs">
+            <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/345159179_565829615678130_5585129486371624787_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=ui_0F5wnBUsAX8fCJwR&_nc_ht=scontent.fmnl17-2.fna&oh=03_AdRj2IXapE1Phj5j865K4ODAGbNvsZ7zc9Y1OAGXJWqvCg&oe=6482ECB8" id="royetteFaulminoAboutUs">
+            <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/345848806_3158940494405304_8164109745215718069_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_ohc=0uOcvFgnLYkAX9C874G&_nc_ht=scontent.fmnl17-3.fna&oh=03_AdTRG4O27QIBmGLmvXhoEDZmiAVlEclUmgbStuXmxRFXmw&oe=6482AC2A" id="edrickJanMartinezAboutUs">
+            <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/345824189_743157337601080_7594681697102838372_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_ohc=OPqivREdUOYAX-SS7z_&_nc_ht=scontent.fmnl17-1.fna&oh=03_AdRvmFAmDmmd9IqoifbZ8MTIQFIxQhzsiSPNDXKTOnXB4w&oe=6482BE10" id="jeshuaJamesBaroniaAboutUs">
+            <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/346068953_636249551242134_447571192651919284_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_ohc=HI-X939lOSIAX8ahe1q&_nc_ht=scontent.fmnl17-3.fna&oh=03_AdTQo29JC1WOMuqIW6pCK4V87Rd6KxyNKE5a95_OwHxQXQ&oe=6482D6CD" id="gideonCuraAboutUs">
+            <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/346020941_241937661757956_9161672292791497800_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_ohc=iro7VkiA0zIAX8CAO11&_nc_ht=scontent.fmnl17-3.fna&oh=03_AdSdeoONZ9HddFpyyQz-Em1mheDxIwn68rieSHa0UaJKXg&oe=6482EA78" id="carielJakeSoriagaAboutUs">
+            <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t1.15752-9/345874238_260569289708901_8048153512111974636_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=Q0YaEM3mPDsAX9xIyCL&_nc_ht=scontent.fmnl17-1.fna&oh=03_AdQ4hFtOVEhqC_CUelfcMmBYO1ZocZkyzYJGkYO7aZ-t6A&oe=6482F486" id="markRomoAboutUs">
+            <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t1.15752-9/345859957_1224737768411277_3867242145151958868_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=gFADY0Gl-qUAX_3-FEM&_nc_oc=AQlatjABlcLi4Zldgi2FnVGmb5dNZqHZ2jUGSeqC7pi89AIJAmf0lHX1T9zvcNKul2A&_nc_ht=scontent.fmnl17-5.fna&oh=03_AdQnYm2U39tMmlBktxhAaaiZCct9SjXBKIxwpdwifq20ug&oe=64832A27" id="joshuaSaladagaAboutUs">
+            <p style="font-size: 30px; position: absolute; top: 410px; left:510px; font-weight: 600;">Members</p>
+            <p style="position: absolute; top: 810px; left: 63px; font-weight: 600;">Renniel R. Anenias</p>
+            <p style="position: absolute; top: 810px; left: 274px; font-weight: 600;">Ma. Janella C. Lorque</p>
+            <p style="position: absolute; top: 810px; left: 480px; font-weight: 600;">Jeshua James M. Baronia</p>
+            <p style="position: absolute; top: 810px; left: 737px; font-weight: 600;">Royette Faulmino</p>
+            <p style="position: absolute; top: 810px; left: 955px; font-weight: 600;">Edrick Jan Martinez</p>
+            <p style="position: absolute; top: 1220px; left: 200px; font-weight: 600;">Gideon Cura</p>
+            <p style="position: absolute; top: 1220px; left: 404px; font-weight: 600;">Cariel Jake Soriaga</p>
+            <p style="position: absolute; top: 1220px; left: 657px; font-weight: 600;">Mark Romo</p>
+            <p style="position: absolute; top: 1220px; left: 861px; font-weight: 600;">Joshua Saladaga</p>
+        </div>
+      </div>
+  
+      <!--Sign Up Page-->
+      <div class = "signUpPage" style="display: none;">
+        <section class="h-100 gradient-form" style="background-color: #eee;">
+          <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col-xl-10">
+                <div class="card rounded-3 text-black">
+                  <div class="row g-0">
+                    <div class="col-lg-6">
+                      <div class="card-body p-md-5 mx-md-4">
+                        <div class="text-center mb-4" >
+                          <img src="https://media.discordapp.net/attachments/970612457976496191/1107147351224758392/image_2023-05-14_112754753-removebg-preview.png"
+                            style="width: 185px; object-fit:contain;" alt="logo">
+                          <h6><i>Hotel Management & Reservation</i></h6>   
+                        </div>
+                        <div class="mb-3">
+                          <label for="txtEmailSignUp" class="form-label">Email:</label>
+                          <input id="txtEmailSignUp" type="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                          <label for="txtUserNameSignUp" class="form-label">Username:</label>
+                          <input id="txtUserNameSignUp" type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                          <label for="txtFirstNameSignUp" class="form-label">First Name:</label>
+                          <input id="txtFirstNameSignUp" type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                          <label for="txtLastNameSignUp" class="form-label">Last Name:</label>
+                          <input id="txtLastNameSignUp" type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                          <label for="txtPasswordSignUp" class="form-label">Password:</label>
+                          <input id="txtPasswordSignUp" type="password" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                          <label for="txtConfirmPasswordSignUp" class="form-label">Confirm Password:</label>
+                          <input id="txtConfirmPasswordSignUp" type="password" class="form-control">
+                        </div>
+                        <p>Already have an account? <a id="linkLogIn" href="javascript:void(0);">Log In Here</a></p>
+                        <button id="btnSignUpSubmit" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
+                        style="padding:20px" >Sign Up</button>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                      <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                        <h4 class="mb-4">Unforgettable Moments Await: Reserve Your Stay Today!</h4>
+                        <p class="medium mb-0">Booking your dream stay is a breeze with our user-friendly reservation system. Simply enter your desired dates, select your preferred room type, and let us take care of the rest. Our secure platform ensures that your personal information is protected, allowing you to make your reservation with confidence.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+  
+      <!--Log In Page-->
+      <div class="logInPage" style="display: none;">
+        <div class = "containerLogIn">
+          <div class="row">
+            <div class="col-sm-6 text-black">
+              <div class="px-5 ms-xl-4 mt-5">
+                <i class="fas fa-crow fa-2x me-3 pt-5 mt-xl-4" style="color: #709085;"></i>
+                   <img src="https://media.discordapp.net/attachments/970612457976496191/1107147351224758392/image_2023-05-14_112754753-removebg-preview.png"
+                   style="width: 185px; object-fit: contain;" alt="logo">  
+              </div>
+              <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
+                <form style="width: 23rem;">
+                  <h3 class="fw-normal mb-2 pb-3" style="letter-spacing: 1px;">Log in</h3>
+                  <div class="form-outline mb-4">
+                    <input type="email" id="txtEmailLogIn" class="form-control form-control-lg" />
+                    <label class="form-label" for="txtEmailLogIn">Email address</label>
+                  </div>
+                  <div class="form-outline mb-4">
+                    <input type="password" id="txtPasswordLogIn" class="form-control form-control-lg" />
+                    <label class="form-label" for="txtPasswordLogIn">Password</label>
+                  </div>
+                  <div class="pt-1 mb-4">
+                    <button id="btnLogInSubmit"class="btn btn-info btn-lg btn-block" type="button" style="background-color:#a041a0; color: whitesmoke; border-color:#a041a0;">Login</button>
+                  </div>
+                  <p>Don't have an account? <a id="linkSignUp" class="link-info" href="javascript:void(0);">Sign Up Here</a></p>
+                </form>
+              </div>
+            </div>
+            <div class="col-sm-6 px-0 d-none d-sm-block">
+              <img id = "imgRightLogIn" src="https://image.lexica.art/full_jpg/13af4b0e-9b27-49ec-92a3-2fd5208c95b6"
+                alt="Login image">
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Profile Page-->
+    <div class="profilePage">
+      <h1 class="text-center">ACCOUNT PROFILE</h1>
+      <p class="text-center">Organize and update your personal information, ensuring that your online presence accurately reflects who you are!</p> 
+      <div class="container mt-5">
+        <ul class="nav nav-tabs" id="myTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="tab1" data-bs-toggle="tab" data-bs-target="#content1" type="button" role="tab" aria-controls="content1" aria-selected="true">My Profile</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab2" data-bs-toggle="tab" data-bs-target="#content2" type="button" role="tab" aria-controls="content2" aria-selected="false">My Reservations</button>
+          </li>
+        </ul>
+        <div class="tab-content mt-3" id="myTabContent">
+          <div class="tab-pane fade show active" id="content1" role="tabpanel" aria-labelledby="tab1">           
+            <h4 id="displayFullName"></h4>
+            <h4 id="displayEmail"></h4>
+            <h4 id="displayUserName">UserName: </h4>
+            <div class = "changePassContainer">
+              <button id="btnChangPass" class="btn btn-success btn-lg pfp">Change Password</button>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="content2" role="tabpanel" aria-labelledby="tab2">
+            <div class = "reservationsContainer">
+              <div class="container">
+                <div class="rowProfile">
+                  <div class="col-md-6">
+                    <h2>My Reservations</h2>
+                    <table id="tblReservations" class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Transaction Number</th>
+                          <th>Package</th>
+                          <th>Room</th>
+                          <th class="w-50">Check In</th>
+                          <th class="w-50">Check Out</th>
+                          <th>Fee</th>
+                          <th>Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Change Password Page-->
+    <div class="changePasswordPage">
+      <div class="changeContainer">
+        <h2 style="margin-bottom: 30px;">Change Password</h2><br><br>
+        <label>Current Password</label> <br>
+        <input id="txtOldPassword" type="text" style="width: 300px; height: 25px; margin-top: 10px;" required> <br><br>
+        <label>New Password</label> <br>
+        <input id="txtPasswordChange" type="password" style="width: 300px; height: 25px; margin-top: 10px;" required><br><br>
+        <label>Confirm New Password</label><br>
+        <input id="txtPasswordChangeConfirm" type="password" style="width: 300px; height: 25px; margin-top: 10px;" required>
+        <button id="btnChangePasswordSubmit" class="btnChange">Change Password</button><br><br>
+        <a id="btnBackChangePass" href="javascript:void(0);">Cancel</a>
+      </div>
+    </div>
+
+    <!--Receipt Modal-->
+    <div id="modalViewReceipt" class="receiptSection" style="display: none;"> 
+      <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="card" style="height: 600px;">
+          <div id="btnCloseReceiptModal">X</div>
+            <div class="card-body mx-4 d-flex align-items-center">
+              <div class="receiptContainer" style="height: 100%;">
+                <p class="my-3 mx-5" style="font-size: 30px;">ScyteX Hotel Reservations</p>
+                <h6 class="my-3 text-center">Official Receipt</h6>
+                <div class="row">
+                  <ul id="listDisplayReceipt" class="list-unstyled">
+                  </ul>
+                  <hr>
+                  <div class="col-xl-10">
+                    <p id="pDisplayReserveFee"></p>
+                  </div>
+                  <div class="col-xl-2">
+                    <p id="pDisplaySubtotal" class="float-end"></p>
+                  </div>
+                  <hr>
+                  <div class="col-xl-12">
+                    <p id="pDisplayTax" class="float-end"></p> 
+                  </div>
+                  <hr>
+                </div>
+                <div class="row">
+                  <div class="col-xl-2">
+                    <p id="pDisplayTotal"></p>
+                  </div>
+                  <hr>
+                </div>
+                <div class="row text-black">
+                  <div class="col-xl-12">
+                    <p id="pDisplayPaymentMethod" class="float-start fw-bold"></p>
+                  </div>
+                  <hr style="border: 2px solid black;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    <!--Booking Page-->
+    <div class="bookingPage">
+      <div class="imgBooking">
+        <img src="https://get.buzztime.com/wp-content/uploads/2018/12/shutterstock_521260084.jpg"
+          style="width: 100%; max-height: 100%; object-fit: cover;">
+        <h1 id ="bookingTitle">BOOKING PAGE</h1>       
+      </div>
+      <div class = "lineContainer">
+        <div class ="lines">
+            <div class = "circles"></div>
+        </div>
+      </div> 
+      <h1 class="text-center" style="margin-top: 2%;">SELECT A DATE</h1>
+      <p class="text-center" style="margin-top: 1%;">
+        You are few clicks away from your dream room!
+        Check the availability of your desired date first!
+      </p>
+      <!--PICKING DATE SECTION-->
+      <div class = "dateContainer">
+        <div class="formContainer">
+          <h5 style="margin-right: 2%;">Select your start date:</h5>
+          <input type="date" id="reservationDateStart" >
+          <h5 style="margin-right: 2%;">Select your end date:</h5>
+          <input type="date" id="reservationDateEnd" >
+          <h5 style="margin-left: 2%;">Select Package:</h5>
+          <!--DATE FORM-->
+            <select id="suiteDropdown" name="suiteDropdown">
+              <option value="Jr. Suite">Jr. Suite</option>
+              <option value="Deluxe Twin">Deluxe Twin</option>
+              <option value="Business Deluxe Single">Business Deluxe Single</option>
+              <option value="Deluxe Queen">Deluxe Queen</option>
+            </select>
+            <h5 style="margin-left: 2%;">Select Room:</h5>
+            <select id="roomDropdown" name="roomDropdown">
+            </select>
+            <button id="btnChkAvail" class="btn btn-secondary btn-lg">CHECK AVAILABILITY</button>
+        </div> 
+      </div>
+    </div>
+
+    <!--IF AVAIL RESERVATION THIS FORM WILL BE SHOWN-->
+    <div class="reservationPage" style="display: none;">
+      <section class="gradient-custom">
+        <div class="reservationContainer">
+          <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+              <div class="card shadow-2-strong card-registration" style="border-radius: 15px; margin-top: 3%; margin-bottom:3%;box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.3);">
+                <div class="card-body p-4 p-md-5">
+                  <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Booking Confirmation</h3>
+                      <div class="row">
+                        <div class="col-md-8 mb-4">
+                          <div class="form-outline">
+                            <h4>Your picked date:</h4>
+                            <p id="pPickedDates"></p>
+                            <p id="pPickedSuite"></p>
+                            <p id="pReservationFee"></p>
+                            <p id="pRoomNum"></p>
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-4 pb-2">
+                          <div class="form-outline">
+                            <select id="paymentDropdown" name="paymentDropdown">
+                              <option value="GCASH">GCASH</option>
+                              <option value="PayMaya">PayMaya</option>
+                              <option value="Credit Card">Credit Card</option>
+                            </select>
+                            <label class="form-label" for="paymentDropdown">Select Payment Method.</label>
+                          </div>
+                        </div>
+                        <div class="mt-4 pt-2">
+                          <button id="btnConfirmBooking">Confirm</button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!--StatusPage-->
+    <div class="awaitStatusPage">
+      <div class= "statusBackgroundText" style="background-image: linear-gradient(to bottom right, rgb(77, 149, 88), rgb(1, 123, 172));">
+        <h2 style="text-align: center;">Thank you for Booking with us!</h2>
+        <p style="color: rgb(100, 220, 100); text-align: center;">Your reservation has been successfully processed.</p>
+        <br><br>
+        <p style="margin-top: 60px; width: 600px; margin: auto;">We at ScyteX Hotel are excited to welcome and serve you. Our hardworking staff is committed to giving you exceptional service and making sure that you have a wonderful time during your stay. From our exquisite facilities to our unmatched hospitality, we work hard to make your time with us one to remember. We look forward to exceeding your expectations and providing you with a memorable stay that will keep you coming back for years to come.</p>
+        <br><br>
+        <p style="width: 600px; margin: auto;">you can view your reservation at any time in your profile page.</p>
+        <button id="btnHome" class="btnHome">Home</button>
+      </div>
+    </div>
+
+    <!--Admin Page-->
+    <div class="adminPage">
+      <div id="adminRows" class="row w-100" style="margin-top:200px;">
+        <div class="col-3">
+          <!-- Tab navs -->
+          <div class="nav flex-column nav-tabs text-center" id="v-tabs-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#v-tabs-transaction" role="tab" aria-controls="v-tabs-transaction-tab" aria-selected="true">Transactions</a>
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#v-tabs-user" role="tab" aria-controls="v-tabs-user-tab" aria-selected="false">Users</a>
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#v-tabs-cancellation" role="tab" aria-controls="v-tabs-cancellation-tab" aria-selected="false">Cancellations</a>
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#v-tabs-package" role="tab" aria-controls="v-tabs-package-tab" aria-selected="false">Packages</a>
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#v-tabs-report" role="tab" aria-controls="v-tabs-report-tab" aria-selected="false">Report</a>
+          </div>
+          <!-- Tab navs -->
+        </div>
+      
+        <div class="col-9">
+          <!-- Tab content -->
+          <div class="tab-content" id="v-tabs-tabContent">
+            <div class="tab-pane fade show active" id="v-tabs-transaction" aria-labelledby="v-tabs-transaction-tab">
+              <h1 class="text-center">Transactions</h1>
+              <table id="tblTransactions" class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Transaction Number</th>
+                    <th>Customer Name</th>
+                    <th>Package</th>
+                    <th>Room</th>
+                    <th>Check In</th>
+                    <th>Check Out</th>
+                    <th>Fee</th>
+                    <th>Payment Method</th>
+                    <th>Date Issued</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="v-tabs-user" role="tabpanel" aria-labelledby="v-tabs-user-tab">
+              <h1 class="text-center">Users</h1>
+              <table id="tblUsers" class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>User</th>
+                    <th>email</th>
+                    <th>UserName</th>
+                    <th>Password</th>
+                    <th>Reservations</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="v-tabs-cancellation" role="tabpanel" aria-labelledby="v-tabs-cancellation-tab">
+              <h1 class="text-center">Cancellations</h1>
+              <table id="tblCancellations" class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Transaction Number</th>
+                    <th>Customer Name</th>
+                    <th>Package</th>
+                    <th>Room</th>
+                    <th>Check In</th>
+                    <th>Check Out</th>
+                    <th>Fee</th>
+                    <th>Payment Method</th>
+                    <th>Date Issued</th>
+                    <th>Cancellation Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="v-tabs-package" role="tabpanel" aria-labelledby="v-tabs-package-tab">
+              <h1 class="text-center">Packages</h1>
+              <table id="tblPackages" class="table table-bordered table-striped">
+                <thead style="background-color: #333;color: white;">
+                  <tr>
+                    <th>ROOMS</th>
+                    <th>STATUS</th>
+                    <th>ACTIONS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="v-tabs-report" role="tabpanel" aria-labelledby="v-tabs-report-tab">
+              <h1 class="text-center">Report</h1>
+              <h5 id="h5DisplayDateGenerated"></h5>
+              <table id="tblReport" class="table table-bordered table-striped">
+                <thead style="background-color: #333;color: white;">
+                  <tr>
+                    <th>PACKAGE</th>
+                    <th>NO.OF RESERVATIONS</th>
+                    <th>NO.OF CANCELLATIONS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            <h5 class="text-center">Bar Graph</h5>
+            <!-- Container for the chart -->
+            <div class="container" style="width:600px;height: 400px;">
+              <div id="chartBar" class="bar">
+                <!-- Canvas element where the chart will be rendered -->
+                <canvas id="barChart"></canvas>
+              </div>
+            </div>
+            </div>
+          </div>
+          <!-- Tab content -->
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4" style="margin: auto;">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="javascript:void(0);" role="button">
+          <i class="fa-brands fa-facebook fa-beat"></i>
+        </a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="javascript:void(0);" role="button">
+          <i class="fab fa-twitter"></i>
+        </a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="javascript:void(0);" role="button">
+          <i class="fab fa-google"></i>
+        </a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="javascript:void(0);" role="button">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="javascript:void(0);" role="button">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="javascript:void(0);" role="button">
+          <i class="fab fa-github"></i>
+        </a>
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          Our welcoming and knowledgeable staff is committed to providing you 
+          with personalized attention that caters to your individual needs.
+          Experience exceptional hospitality at our hotels - reserve your stay today!
+        </p>
+      </section>
+      <!-- Section: Text -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        &copy; Copyright 2023:
+        <a class="text-white">ScyteX</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- Bootstrap & Popper JS (ALL FOR DESIGNS)-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <!--Main Scripts-->
+    <script src="User.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
